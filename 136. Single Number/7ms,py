@@ -1,0 +1,10 @@
+nums = [2,2,1]
+s = set(nums)
+num_list = set()
+repeat = set()
+for num in nums:
+    if num not in num_list:
+        num_list.add(num)
+    else:
+        repeat.add(num)
+print(list(s-repeat)[0])
